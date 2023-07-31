@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jogo da Velha</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title-jogo">Jogo da Velha</h1>
+    </header>
+    <main>
+      <div class="jogo-da-velha">
+        <div>
+          <div class="quadrado" id="1" onclick="escolherQuardado(this.id)">-</div>
+          <div class="quadrado" id="2" onclick="escolherQuardado(this.id)">-</div>
+          <div class="quadrado" id="3" onclick="escolherQuardado(this.id)">-</div>
+        </div>
+        <div>
+          <div class="quadrado" id="4" onclick="escolherQuardado(this.id)">-</div>
+          <div class="quadrado" id="5" onclick="escolherQuardado(this.id)">-</div>
+          <div class="quadrado" id="6" onclick="escolherQuardado(this.id)">-</div>
+        </div>
+        <div>
+          <div class="quadrado" id="7" onclick="escolherQuardado(this.id)">-</div>
+          <div class="quadrado" id="8" onclick="escolherQuardado(this.id)">-</div>
+          <div class="quadrado" id="9" onclick="escolherQuardado(this.id)">-</div>
+        </div>
+      </div>
+
+      <div class="jogador">
+        <label for="">Jogador:</label>
+        <label id="jogador-selecionado"></label>
+      </div>
+      <div class="vencedor">
+        <label for="">Vencedor:</label>
+        <label id="vencedor-selecionado"></label>
+      </div>
+      <div class="button">
+        <button onclick="restart()">Reiniciar</button>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
